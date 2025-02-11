@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation Tips</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #ff8080;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #ffc3c3;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            border: double #ff8080 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #ff8080;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ff8080;
+            color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: #ff6f61;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .benefits {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .tips {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .tip-box {
+            background-color: #ffebcd;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            width: calc(30% - 20px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .tip-box:hover {
+            transform: scale(1.05);
+        }
+        footer {
+        background-color: #ff8080;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+            min-width: 250px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        @media only screen and (max-width: 768px){
+            .footer-container {
+            flex-direction: column;
+            text-align: center;
+            }
+
+            .footer-section {
+            margin-bottom: 20px;
+            }
+            .tip-box {
+                width: calc(45% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .tip-box {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+    <header>
+        <nav>
+            <img src="Website logo.png" width="100px" alt="logo"></a>
+            <a href="Homepbl.html">Home Page</a>
+            <a href="About us.html">About Us</a>
+            <div class="dropdown">
+                <a href="Study.html">Study</a>
+                <div class="dropdown-content">
+                    <a href="Book.html">Book Recomendations</a>
+                    <a href="Time.html">Time management</a>
+                    <a href="Study tips.html">study tips</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="fitness.html">Fitness</a>
+                <div class="dropdown-content">
+                    <a href="Yoga.html">Yoga</a>
+                    <a href="E.html">Energetic activities</a>
+                    <a href="Healthy food and drinks recipes.html">Healthy food and drinks recipes</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="Relax1.html">Relax</a>
+                <div class="dropdown-content">
+                    <a href="Meditation.html">Meditation</a>
+                    <a href="music.html">Music</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+ 
+<div class="container">
+    <h1>Meditation Tips</h1>
+    <p>Find your inner peace and tranquility</p>
+    <section class="benefits">
+        <h2>Benefits of Meditation</h2>
+        <ul>
+            <li>Reduces stress and anxiety</li>
+            <li>Improves focus and concentration</li>
+            <li>Enhances self-awareness</li>
+            <li>Promotes emotional health</li>
+            <li>May reduce age-related memory loss</li>
+            <li>Improves sleep quality</li>
+            <li>Increases feelings of well-being</li>
+        </ul>
+    </section>
+ 
+    <section>
+        <h2>Tips for Effective Meditation</h2>
+        <div class="tips">
+            <div class="tip-box">
+                <h3>1. Find a Quiet Space</h3>
+                <p>Choose a peaceful environment where you won't be disturbed.</p>
+            </div>
+            <div class="tip-box">
+                <h3>2. Set a Timer</h3>
+                <p>Start with just 5-10 minutes and gradually increase the time.</p>
+            </div>
+            <div class="tip-box">
+                <h3>3. Focus on Your Breath</h3>
+                <p>Pay attention to your breathing to help clear your mind.</p>
+            </div>
+            <div class="tip-box">
+                <h3>4. Be Kind to Yourself</h3>
+                <p>It's normal for thoughts to wander; gently bring your focus back.</p>
+            </div>
+            <div class="tip-box">
+                <h3>5. Use Guided Meditations</h3>
+                <p>Consider using apps or videos for guidance, especially as a beginner.</p>
+            </div>
+            <div class="tip-box">
+                <h3>6. Create a Routine</h3>
+                <p>Try to meditate at the same time each day to build a habit.</p>
+            </div>
+        </div>
+        <footer>
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-section">
+                        <img src="Website logo.png" alt=" Logo" width="180px">
+                    <p>Self-Care Central</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                        <li><a href="About us.html">About Us</a></li>
+                        <li><a href="Study.html">Study</a></li>
+                        <li><a href="Health.html">Health</a></li>
+                        <li><a href="Relax1.html">Relax</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="footer-bottom">© Copyright 2025 www.Self-Care Central.com. All rights reserved. Developed by Robotic.</p>
+            </footer>
+        </footer> 
+    </section>
+<div>
+</body>

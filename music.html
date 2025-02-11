@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Vibes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffc3c3;
+            color: #fff;
+        }
+
+        header {
+            background:  #ff8080;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            }
+        
+        nav img {
+       
+            margin-left: 15px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background:#ffc3c3;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            border: double #ff8080 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color:#ff8080;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color:#ff8080;
+            color: white;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        
+        .main-content {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .album {
+            background: #ff8080;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .album:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .album img {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .album h3 {
+            font-size: 28px;
+            color: #ffc3c3;
+            margin-bottom: 10px;
+        }
+
+        .album p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #fff;
+        }
+
+        footer {
+        background-color: #ff8080;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+            min-width: 250px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        @media only screen and (max-width: 768px){
+            .footer-container {
+            flex-direction: column;
+            text-align: center;
+            }
+
+            .footer-section {
+            margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Website logo.png" width="100px" alt="logo"></a>
+            <a href="Homepbl.html">Home Page</a>
+            <a href="About us.html">About Us</a>
+            <div class="dropdown">
+                <a href="Study.html">Study</a>
+                <div class="dropdown-content">
+                    <a href="Book.html">Book Recomendations</a>
+                    <a href="Time.html">Time management</a>
+                    <a href="Study tips.html">study tips</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="fitness.html">Fitness</a>
+                <div class="dropdown-content">
+                    <a href="Yoga.html">Yoga</a>
+                    <a href="E.html">Energetic activities</a>
+                    <a href="Healthy food and drinks recipes.html">Healthy food and drinks recipes</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="Relax1.html">Relax</a>
+                <div class="dropdown-content">
+                    <a href="Meditation.html">Meditation</a>
+                    <a href="music.html">Music</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="main-content">
+        <h2>Discover New Music</h2>
+        <p>Explore the latest albums, songs, and artists that are shaping the music scene today.</p>
+
+        <div class="album">
+            <a href="Sawako playlist.mp3"><img src="Story pin image.jpg" alt="Album Cover"></a>
+            <h3>Sawako</h3>
+            <p>A brief description of the album goes here. This is where you can talk about the genre, themes, and notable tracks of the album.</p>
+        </div>
+
+        <div class="album">
+            <a href="Burmese songs .mp3"><img src="The Sound of Burmese Pop - playlist by The Sounds of Spotify _ Spotify.png" alt="Album Cover"></a>
+            <h3>Burmese</h3>
+            <p>This album features a mix of various genres and is known for its experimental sound. The songs are emotional and energetic, blending different styles.</p>
+        </div>
+
+        <div class="album">
+            <a href="gentle love    𖦹 ᡣ𐭩   soft playlist.mp3"><img src="M.png" alt="Album Cover"></a>
+            <h3>Gentle love</h3>
+            <p>Album brings fresh beats, with lyrics that speak to the heart. It's an amazing addition to any music lover’s collection.</p>
+        </div>
+
+        <div class="album">
+            <a href="Cas-Apocalypse .mp3"><img src="C.png" alt="Album Cover"></a>
+            <h3>Cas-Apo</calypse>
+            <p>A brief description of the album goes here. This is where you can talk about the genre, themes, and notable tracks of the album.</p>
+        </div>
+
+        <div class="album">
+            <a href="Accident-Big Bag& Mary.mp3"><img src="This may contain_ an abstract painting with two people standing in the water.png" alt="Album Cover"></a>
+            <h3>Accident-big</h3>
+            <p>This album features a mix of various genres and is known for its experimental sound. The songs are emotional and energetic, blending different styles.</p>
+        </div>
+
+        <div class="album">
+            <a href="𓇼  𓏲soft girl playlist  .mp3"><img src="This may contain_ a pink record player sitting on top of a white table next to an album cover.png" alt="Album Cover"></a>
+            <h3>Soft Girl</h3>
+            <p>Album brings fresh beats, with lyrics that speak to the heart. It's an amazing addition to any music lover’s collection.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="Website logo.png" alt=" Logo" width="180px">
+            <p>Self-Care Central</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Study.html">Study</a></li>
+                <li><a href="Health.html">Health</a></li>
+                <li><a href="Relax1.html">Relax</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">© Copyright 2025 www.Self-Care Central.com. All rights reserved. Developed by Robotic.</p>
+    </footer>
+</body>
+</html>
