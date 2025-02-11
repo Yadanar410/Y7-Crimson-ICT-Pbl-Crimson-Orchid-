@@ -73,15 +73,46 @@
             padding: 20px;
             color: #ff8080;
         }
-        .footer {
-            background: #ff8080;
-            color: white;
-            padding: 40px 0;
-            display: flex;
-            justify-content: space-around;
+        footer {
+        background-color: #ff8080;
+        color: white;
+        padding: 20px;
+        text-align: center;
         }
-        .footer div {
-            text-align: left;
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+            min-width: 250px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        @media only screen and (max-width: 768px){
+            .footer-container {
+            flex-direction: column;
+            text-align: center;
+            }
+
+            .footer-section {
+            margin-bottom: 20px;
+            }
         }
 </style>
 </head>
