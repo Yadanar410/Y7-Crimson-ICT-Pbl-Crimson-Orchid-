@@ -162,17 +162,46 @@
         }
         
         footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #FF8080;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+        background-color: #ff8080;
+        color: white;
+        padding: 20px;
+        text-align: center;
         }
-        
-        footer p {
-            margin: 0;
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+            min-width: 250px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        @media only screen and (max-width: 768px) {
+            .col-3, .col-4 { width: 50%; }
+            .footer-container {
+            flex-direction: column;
+            text-align: center;
+            }
+
+            .footer-section {
+            margin-bottom: 20px;
+            }
         }
  
     </style>
@@ -180,7 +209,7 @@
 <body>
     <header>
         <nav>
-            <img src="Website logo.png" width="100px" alt="logo"></a>
+            <img src="Images/Website logo.png" width="100px" alt="logo"></a>
             <a href="Homepbl.html">Home Page</a>
             <a href="About us.html">About Us</a>
             <div class="dropdown">
@@ -192,7 +221,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <a href="fitness.html">Fitness</a>
+                <a href="fitness.html">Health</a>
                 <div class="dropdown-content">
                     <a href="Yoga.html">Yoga</a>
                     <a href="">Energetic activities</a>
@@ -253,7 +282,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-section">
-                <img src="Website logo.png" alt=" Logo" width="180px">
+                <img src="Images/Website logo.png" alt=" Logo" width="180px">
             <p>Self-Care Central</p>
             </div>
             <div class="footer-section">

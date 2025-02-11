@@ -88,16 +88,49 @@
             padding: 10px;
             border-radius: 5px;
         }
-        .footer {
-            background: #ff8080;
-            color: white;
-            padding: 40px 0;
+        footer {
+        background-color: #ff8080;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        }
+
+        .footer-container {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
-        .footer div {
-            text-align: left;
+
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+            min-width: 250px;
         }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        @media only screen and (max-width: 768px) {
+            .col-3, .col-4 { width: 50%; }
+            .footer-container {
+            flex-direction: column;
+            text-align: center;
+            }
+
+            .footer-section {
+            margin-bottom: 20px;
+            }
+        }
+ 
 </style>
 </head>
 <body>
@@ -115,10 +148,10 @@
                 </div>
             </div>
             <div class="dropdown">
-                <a href="fitness.html">Fitness</a>
+                <a href="fitness.html">Health</a>
                 <div class="dropdown-content">
                     <a href="Yoga.html">Yoga</a>
-                    <a href="">Energetic activities</a>
+                    <a href="E.html">Energetic activities</a>
                     <a href="Healthy food and drinks recipes.html">Healthy food and drinks recipes</a>
                 </div>
             </div>
@@ -145,22 +178,22 @@
 </section>
  
 <footer>
-    <div class="footer-container">
-        <div class="footer-section">
-            <img src="Images/Website logo.png" alt=" Logo" width="180px">
-        <p>Self-Care Central</p>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="Images/Website logo.png" alt=" Logo" width="180px">
+            <p>Self-Care Central</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Study.html">Study</a></li>
+                <li><a href="Health.html">Health</a></li>
+                <li><a href="Relax1.html">Relax</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-            <li><a href="About us.html">About Us</a></li>
-            <li><a href="Study.html">Study</a></li>
-            <li><a href="Health.html">Health</a></li>
-            <li><a href="Relax1.html">Relax</a></li>
-            </ul>
-        </div>
-    </div>
-    <p class="footer-bottom">© Copyright 2025 www.Self-Care Central.com. All rights reserved. Developed by Robotic.</p>
-</footer>
+        <p class="footer-bottom">© Copyright 2025 www.Self-Care Central.com. All rights reserved. Developed by Robotic.</p>
+    </footer>
 </body>
 </html>
